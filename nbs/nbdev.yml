@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "deep-learner"
+  site-url: "https://ryaneng97.github.io/deep-learner"
+  description: "Deep Learner Framework"
+  repo-branch: main
+  repo-url: "https://github.com/ryaneng97/deep-learner"

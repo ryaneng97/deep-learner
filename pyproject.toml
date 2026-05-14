@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deep-learner"
+dynamic = ["version"]
+description = "Deep Learner Framework"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "Ryan English", email = "ryanenglish97@gmail.com"}]
+keywords = ['nbdev']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/ryaneng97/deep-learner"
+Documentation = "https://ryaneng97.github.io/deep-learner/"
+
+[project.entry-points.nbdev]
+deep_learner = "deep_learner._modidx:d"
+
+[tool.setuptools.dynamic]
+version = {attr = "deep_learner.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["deep_learner"]
+
+[tool.nbdev]
